@@ -8,15 +8,9 @@ import { ActivityData } from '../activity-data';
 })
 export class DaySummaryComponent implements OnInit {
 	constructor () {
-}
-  constructor(day: string) { 
-	dayData = getDayData(day);
-}
+	}
 
   ngOnInit() {
   }
 
-	private getDayData(day: string): any {
-		return ActivityData.find(a => a.day === day);
-	}
 }
