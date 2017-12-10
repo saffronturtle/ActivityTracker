@@ -3,9 +3,11 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NgModule } from '@angular/core';
 
 import {
-	MatButtonModule
+	MatButtonModule,
+	MatIconModule
 } from '@angular/material';
 
+import { FlexLayoutModule } from "@angular/flex-layout";
 
 import { AppRoutingModule } from './app-routing.module';
 
@@ -21,8 +23,10 @@ import { NavComponent } from './nav/nav.component';
   imports: [
     BrowserModule,
 		BrowserAnimationsModule,
+		FlexLayoutModule,
     AppRoutingModule,
-		MatButtonModule
+		MatButtonModule,
+		MatIconModule
   ],
   providers: [],
   bootstrap: [AppComponent]
