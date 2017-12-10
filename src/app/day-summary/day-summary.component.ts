@@ -7,10 +7,16 @@ import { ActivityData } from '../activity-data';
   styleUrls: ['./day-summary.component.scss']
 })
 export class DaySummaryComponent implements OnInit {
-	data = ActivityData;
-  constructor() { }
+	constructor () {
+}
+  constructor(day: string) { 
+	dayData = getDayData(day);
+}
 
   ngOnInit() {
   }
 
+	private getDayData(day: string): any {
+		return ActivityData.find(a => a.day === day);
+	}
 }
