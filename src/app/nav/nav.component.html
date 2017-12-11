@@ -2,6 +2,9 @@
 	<nav>
 		<div fxFlexLayout="row" fxLayoutAlign="center center">
 		<div fxFlex="90">
+			<a mat-button routerLink="/">
+				<mat-icon>home</mat-icon>
+			</a>
 			<a mat-button routerLink="{{day}}" *ngFor ='let day of days'>{{day}}</a>
 		</div>
 		<div fxFlex fxLayoutAlign="end center">
