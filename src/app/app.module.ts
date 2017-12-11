@@ -15,7 +15,7 @@ import { AppComponent } from './app.component';
 import { NavComponent } from './nav/nav.component';
 import { DaySummaryComponent } from './day-summary/day-summary.component';
 
-
+import { ActivityService } from './activity.service';
 @NgModule({
   declarations: [
     AppComponent,
@@ -30,7 +30,7 @@ import { DaySummaryComponent } from './day-summary/day-summary.component';
 		MatButtonModule,
 		MatIconModule
   ],
-  providers: [],
+  providers: [ ActivityService ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

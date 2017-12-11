@@ -6,8 +6,11 @@ import { ActivityData } from './activity-data';
 export class ActivityService {
 
   constructor() { }
-
-	getDayData(day: string): any {
+	
+	getDayData(day: string): Observable<Activity>[] {
 		return ActivityData.find(a => a.day === day);	
+	}
+	getDays(): any {
+		return ActivityData.map(a => a.day);
 	}
 }
