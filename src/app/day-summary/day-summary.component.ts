@@ -29,6 +29,6 @@ export class DaySummaryComponent implements OnInit {
 			params => this.day = params.get('day')
 		);
 		this.dayData = this.activityService.getDayData(this.day);
-		console.log(this.activityService.getDayData("Thursday");
 	}
+	
 }

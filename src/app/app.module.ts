@@ -4,7 +4,8 @@ import { NgModule } from '@angular/core';
 
 import {
 	MatButtonModule,
-	MatIconModule
+	MatIconModule,
+	MatCardModule
 } from '@angular/material';
 
 import { FlexLayoutModule } from "@angular/flex-layout";
@@ -28,7 +29,8 @@ import { ActivityService } from './activity.service';
 		FlexLayoutModule,
     AppRoutingModule,
 		MatButtonModule,
-		MatIconModule
+		MatIconModule,
+		MatCardModule
   ],
   providers: [ ActivityService ],
   bootstrap: [AppComponent]
