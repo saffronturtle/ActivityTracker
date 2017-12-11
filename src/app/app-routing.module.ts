@@ -2,8 +2,10 @@ import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
 import { DaySummaryComponent } from './day-summary/day-summary.component';
+import { WelcomeComponent } from './welcome/welcome.component';
 
 const routes: Routes = [
+{ path: '', component: WelcomeComponent },
 { path: ':day', component: DaySummaryComponent }
 ];
 

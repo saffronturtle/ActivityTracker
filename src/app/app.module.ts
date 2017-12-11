@@ -18,12 +18,14 @@ import { DaySummaryComponent } from './day-summary/day-summary.component';
 
 import { ActivityService } from './activity.service';
 import { ImageCategoryPipe } from './image-category.pipe';
+import { WelcomeComponent } from './welcome/welcome.component';
 @NgModule({
   declarations: [
     AppComponent,
     NavComponent,
     DaySummaryComponent,
-    ImageCategoryPipe
+    ImageCategoryPipe,
+    WelcomeComponent
   ],
   imports: [
     BrowserModule,

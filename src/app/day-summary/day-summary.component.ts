@@ -13,7 +13,6 @@ import { ImageCategoryPipe } from '../image-category.pipe';
 })
 export class DaySummaryComponent implements OnInit {
 	dayData: Activity[];
-	day: string;
 	constructor (
 		private route: ActivatedRoute,
 		private activityService: ActivityService,
@@ -23,13 +22,11 @@ export class DaySummaryComponent implements OnInit {
   ngOnInit() {
 		this.getDayData();
   }
-	
 
 	getDayData(): void {
 		this.route.paramMap.subscribe(
-			params => this.day = params.get('day')
+			params => this.dayData = this.activityService.getDayData(params.get('day'))
 		);
-		this.dayData = this.activityService.getDayData(this.day);
 	}
 	
 }
