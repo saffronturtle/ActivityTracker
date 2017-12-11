@@ -7,10 +7,10 @@ export class ActivityService {
 
   constructor() { }
 	
-	getDayData(day: string): Observable<Activity>[] {
-		return ActivityData.find(a => a.day === day);	
+	getDayData(day: string): any {
+		return ActivityData.filter(a => a.day === day);	
 	}
 	getDays(): any {
-		return ActivityData.map(a => a.day);
+		return (ActivityData.map(a => a.day)).filter((x,i,a) => x && a.indexOf(x) === i);
 	}
 }

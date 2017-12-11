@@ -28,6 +28,7 @@ export class DaySummaryComponent implements OnInit {
 		this.route.paramMap.subscribe(
 			params => this.day = params.get('day')
 		);
-		console.log(this.day);
+		this.dayData = this.activityService.getDayData(this.day);
+		console.log(this.activityService.getDayData("Thursday");
 	}
 }
