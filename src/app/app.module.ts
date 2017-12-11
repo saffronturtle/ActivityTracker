@@ -17,11 +17,13 @@ import { NavComponent } from './nav/nav.component';
 import { DaySummaryComponent } from './day-summary/day-summary.component';
 
 import { ActivityService } from './activity.service';
+import { ImageCategoryPipe } from './image-category.pipe';
 @NgModule({
   declarations: [
     AppComponent,
     NavComponent,
-    DaySummaryComponent
+    DaySummaryComponent,
+    ImageCategoryPipe
   ],
   imports: [
     BrowserModule,

@@ -4,6 +4,7 @@ import { Location } from '@angular/common';
 
 import { Activity } from '../activity';
 import { ActivityService } from '../activity.service';
+import { ImageCategoryPipe } from '../image-category.pipe';
 
 @Component({
   selector: 'app-day-summary',

@@ -1,8 +1,9 @@
 <mat-card *ngFor="let activity of dayData">
-	<div fxFlex fxFlexLayout="center center">
-	<div fxFlex=20>
+	<div fxFlex fxFlexLayout="row" fxLayoutGap=5vw>
+	<div>
+	<img src="{{activity.category | imageCategory}}" class="mat-elevation-z2">
 	</div>
-	<div fxFlex>
+	<div fxFlex fxLayoutAlign="start center">
 	{{activity.description}}
 	{{activity.duration}} hours
 	</div>
