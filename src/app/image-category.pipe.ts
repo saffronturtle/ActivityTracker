@@ -7,10 +7,11 @@ export class ImageCategoryPipe implements PipeTransform {
 
   transform(value: string, args?: any): string {
     switch ( value ) {
-			case "productivity" {
+			case "productivity": {
 				return "https://lorempixel.com/100/100/business"; }
-			case "exercise" {
+			case "exercise": {
 				return "https://lorempixel.com/100/100/sports"; }
-  }
+  	}
+	}
 
 }

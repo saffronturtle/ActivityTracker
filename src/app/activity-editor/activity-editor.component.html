@@ -1,0 +1,31 @@
+<mat-card>
+<form (ngSubmit)="onSubmit()">
+		<div>
+		Day:
+		<select required name="day" [(ngModel)]="model.day">
+			<option>Wednesday<option>
+			<option>Thursday<option>
+			<option>Friday<option>
+			<option>Saturday</option>
+			<option>Sunday</option>
+			<option>Monday</option>
+		</select>
+		</div>
+		<div>
+		Description:
+		<input required name="description" [(ngModel)]="model.description" type="text">
+		</div>
+		<div>
+		Duration:
+		<input required name="duration" [(ngModel)]="model.duration" type="number">
+		</div>
+		<div>
+		Category:
+		<select required name="category" [(ngModel)]="model.category" type="text">
+			<option>productivity</option>
+			<option>exercise</option>
+		</select>
+		</div>
+		<button mat-raised-button color="primary">Submit</button>
+</form>
+</mat-card>

@@ -4,13 +4,19 @@ import { ActivityData } from './activity-data';
 
 @Injectable()
 export class ActivityService {
+	data: Activity[];
 
-  constructor() { }
-	
+  constructor() { 
+	this.data = ActivityData;
+	}	
 	getDayData(day: string): any {
-		return ActivityData.filter(a => a.day === day);	
+		return this.data.filter(a => a.day === day);	
 	}
 	getDays(): any {
-		return (ActivityData.map(a => a.day)).filter((x,i,a) => x && a.indexOf(x) === i);
+		return (this.data.map(a => a.day)).filter((x,i,a) => x && a.indexOf(x) === i);
 	}
+	addActivity(activity: Activity) {
+		this.data.push(activity);
+	}
+		
 }

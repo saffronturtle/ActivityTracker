@@ -5,7 +5,7 @@
 			<a mat-button routerLink="/">
 				<mat-icon>home</mat-icon>
 			</a>
-			<a mat-button routerLink="{{day}}" *ngFor ='let day of days'>{{day}}</a>
+			<a mat-button routerLink="summary/{{day}}" *ngFor ='let day of days'>{{day}}</a>
 		</div>
 		<div fxFlex fxLayoutAlign="end center">
 			<button mat-icon-button>
@@ -15,6 +15,10 @@
 	</div>
 	</nav>
 </header>
+
+<button mat-fab routerLink="editor">
+	<mat-icon>add</mat-icon>
+</button>
 			
 			
 
